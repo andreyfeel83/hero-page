@@ -3,7 +3,7 @@ const alldrinks = document.querySelectorAll('.drink');
 alldrinks.forEach((drink, index) => {
 	setTimeout(() => {
 		drink.style.display = 'block';
-	}, index * 1000);
+	}, (index + 2)* 1000);
 
 	drink.addEventListener('click', (e) => {
 		let activeDrink = e.target;
