@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	padding: 10%;
+}
+
+.drinks-list {
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.drink {
+	display: none;
+	width: 15%;
+	filter: grayscale(90%);
+	transition: filter 1s ease, width 1s ease;
+}
+
+.drink:hover {
+	filter: none;
+	width: 20%;
+	cursor: pointer;
+}
+
+.active {
+	width: 22%;
+	filter: none;
+}
+
+h1 {
+	color: yellow;
+	font-size: 5rem;
+	text-align: center;
+	margin-block-start: 100px;
+}
